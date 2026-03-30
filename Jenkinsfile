@@ -2,7 +2,7 @@ pipeline {
     agent any
     environment {
         DOCKER_HUB_CREDENTIALS = credentials('docker-hub-credentials-id')
-        IMAGE_NAME = 'yourdockerhubusername/podinfo'
+        IMAGE_NAME = 'amalsthayyil/podinfo'
         TAG = "${env.BUILD_NUMBER}"
     }
     stages {
